@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=82;
+		nextID=197;
 	};
 	class MarkerIDProvider
 	{
-		nextID=18;
+		nextID=19;
 	};
 	class Camera
 	{
-		pos[]={1036.4966,7.8765206,908.00305};
-		dir[]={-0.79320741,-0.25657755,0.55233139};
-		up[]={-0.21059048,0.96651876,0.14663924};
-		aside[]={0.57145774,3.1315722e-08,0.82067686};
+		pos[]={1034.1871,26.446728,888.3924};
+		dir[]={-0.24623799,-0.36690301,0.89707875};
+		up[]={-0.097118519,0.93025976,0.35381615};
+		aside[]={0.96433222,-2.6542693e-08,0.2646983};
 	};
 };
 binarizationWanted=0;
@@ -48,13 +48,17 @@ addons[]=
 	"ace_grenades",
 	"Weapons_F_JCA_IA_Rifles_HK437",
 	"Weapons_F_JCA_IA_Rifles_M16A4",
-	"ace_ballistics"
+	"ace_ballistics",
+	"RegalisSCP_CB_room_lcz",
+	"RegalisSCP_CB_room_things",
+	"crowsEW_editormodules",
+	"A3_Characters_F_AoW"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=14;
+		items=18;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -143,15 +147,40 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
+		class Item14
+		{
+			className="RegalisSCP_CB_room_lcz";
+			name="RegalisSCP_CB - Room_LCZ";
+		};
+		class Item15
+		{
+			className="RegalisSCP_CB_room_things";
+			name="RegalisSCP_CB - Room_Things";
+		};
+		class Item16
+		{
+			className="crowsEW_editormodules";
+			name="Crow's EW - Editor Modules";
+			author="Crowdedlight";
+		};
+		class Item17
+		{
+			className="A3_Characters_F_AoW";
+			name="Arma 3 Art of War - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
+};
+dlcs[]=
+{
+	"Expansion",
+	"Enoch"
 };
 randomSeed=6799645;
 class ScenarioData
 {
 	author="Berntsen";
-};
-class CustomAttributes
-{
 };
 class Mission
 {
@@ -180,7 +209,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=20;
+		items=92;
 		class Item0
 		{
 			dataType="Marker";
@@ -373,7 +402,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1022.965,5.1492577,908.44299};
+						position[]={1022.965,5.1492572,908.44299};
 						angles[]={0,2.7595224,0};
 					};
 					side="West";
@@ -383,7 +412,7 @@ class Mission
 						rank="LIEUTENANT";
 						name="p_1";
 						description="Epsilon Commander";
-						isPlayer=1;
+						isPlayable=1;
 						class Inventory
 						{
 							class primaryWeapon
@@ -754,6 +783,7 @@ class Mission
 					};
 					id=58;
 					type="B_Survivor_F";
+					atlOffset=-4.7683716e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1556,6 +1586,7 @@ class Mission
 					};
 					id=65;
 					type="B_Survivor_F";
+					atlOffset=-4.7683716e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1755,6 +1786,7 @@ class Mission
 					};
 					id=67;
 					type="B_Survivor_F";
+					atlOffset=4.7683716e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2151,6 +2183,7 @@ class Mission
 					};
 					id=71;
 					type="B_Survivor_F";
+					atlOffset=-4.7683716e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2349,6 +2382,7 @@ class Mission
 					};
 					id=73;
 					type="B_Survivor_F";
+					atlOffset=4.7683716e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2768,6 +2802,7 @@ class Mission
 					};
 					id=77;
 					type="B_Survivor_F";
+					atlOffset=4.7683716e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3213,6 +3248,1491 @@ class Mission
 			{
 			};
 			id=64;
+			atlOffset=-4.7683716e-07;
+		};
+		class Item20
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2323.8501,10.593588,2383.0845};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=100;
+			type="SCP_CB_LCZ_Hallway_Two_1";
+		};
+		class Item21
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2328.0212,11.033888,2396.3918};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=104;
+			type="SCP_CB_LCZ_Hallway_Corner_1";
+			atlOffset=-4.7683716e-07;
+		};
+		class Item22
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2338.6372,10.033168,2394.1638};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=105;
+			type="SCP_CB_LCZ_Hallway_Three_3";
+		};
+		class Item23
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2346.009,9.1728916,2397.8247};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=107;
+			type="SCP_CB_Things_Door1_CardReader";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="RequiredClearanceLevel";
+					expression="_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item24
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2338.6138,10.187416,2383.0845};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=109;
+			type="SCP_CB_LCZ_Hallway_Four_3";
+			atlOffset=-4.7683716e-07;
+		};
+		class Item25
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2331.2205,9.1728907,2383.04};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=111;
+			type="SCP_CB_Things_Door1_Button_Error";
+		};
+		class Item26
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2338.6108,9.1839886,2375.677};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=112;
+			type="SCP_CB_Things_Door1_CardReader";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="RequiredClearanceLevel";
+					expression="_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=4;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item27
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2346.0029,9.1728907,2383.0566};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=113;
+			type="SCP_CB_Things_Door1_CardReader";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="RequiredClearanceLevel";
+					expression="_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item28
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2331.251,9.1728907,2397.8149};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=114;
+			type="SCP_CB_Things_Door1_CardReader";
+		};
+		class Item29
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2322.8438,9.1692791,2370.6956};
+				angles[]={-0,2.243232,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=115;
+			type="SCP_CB_Things_Item_Keycard_C1";
+		};
+		class Item30
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2338.616,9.1728907,2390.426};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=117;
+			type="SCP_CB_Things_Door1_CardReader";
+			atlOffset=9.5367432e-07;
+		};
+		class Item31
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2325.603,9.8757114,2370.675};
+				angles[]={0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=118;
+			type="SCP_CB_LCZ_Room_Archive";
+		};
+		class Item32
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2323.8689,9.1778898,2372.1648};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=119;
+			type="SCP_CB_Things_Door1_CardReader";
+		};
+		class Item33
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2323.8538,9.1778889,2375.6523};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=120;
+			type="SCP_CB_Things_Door1_CardReader";
+		};
+		class Item34
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2323.8533,9.1728916,2390.4434};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=121;
+			type="SCP_CB_Things_Door1_CardReader";
+		};
+		class Item35
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2341.7598,9.3693571,2377.9043};
+				angles[]={0,1.4567459,-0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=122;
+			type="SCP_CB_Things_Item_Keycard_C2";
+			atlOffset=0.703125;
+		};
+		class Item36
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2349.3018,10.571907,2393.6091};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=124;
+			type="SCP_CB_LCZ_Hallway_Corner_2";
+		};
+		class Item37
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2353.3831,9.1768751,2390.4409};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=126;
+			type="SCP_CB_Things_HeavyDoor_Button";
+		};
+		class Item38
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2338.6177,10.579465,2368.3186};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=129;
+			type="SCP_CB_LCZ_Hallway_Tesla";
+		};
+		class Item39
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2342.5764,10.815794,2357.2349};
+				angles[]={-0,4.712389,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=130;
+			type="SCP_CB_LCZ_Hallway_Corner_Elevator";
+		};
+		class Item40
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2338.6155,9.1839867,2360.8926};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=132;
+			type="SCP_CB_Things_Door1_CardReader";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="RequiredClearanceLevel";
+					expression="_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=4;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item41
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2346.0012,9.1728907,2353.5242};
+				angles[]={0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=133;
+			type="SCP_CB_Things_Door1_CardReader";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="RequiredClearanceLevel";
+					expression="_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=4;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item42
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2382.4089,11.692572,2368.55};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=134;
+			type="SCP_CB_LCZ_Room_372";
+		};
+		class Item43
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2354.8281,10.949202,2368.2959};
+				angles[]={-0,4.712389,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=135;
+			type="SCP_CB_LCZ_Hallway_Three_2";
+		};
+		class Item44
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2349.2109,11.033888,2354.9465};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=136;
+			type="SCP_CB_LCZ_Hallway_Corner_1";
+			atlOffset=-4.7683716e-07;
+		};
+		class Item45
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2353.377,9.1728907,2360.896};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=137;
+			type="SCP_CB_Things_Door1_CardReader";
+			atlOffset=9.5367432e-07;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="RequiredClearanceLevel";
+					expression="_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=4;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item46
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2353.4077,10.946194,2383.0657};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=138;
+			type="SCP_CB_LCZ_Hallway_Four_2";
+		};
+		class Item47
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2368.4348,9.3180199,2363.7244};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=139;
+			type="SCP_CB_LCZ_Hallway_Two_Toilet";
+		};
+		class Item48
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2375.5339,9.2078905,2368.292};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=140;
+			type="SCP_CB_Things_Door1_CardReader";
+			atlOffset=0.035000801;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="RequiredClearanceLevel";
+					expression="_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item49
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2353.387,9.1728907,2375.686};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=141;
+			type="SCP_CB_Things_Door1_CardReader";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="RequiredClearanceLevel";
+					expression="_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item50
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2363.9292,10.571907,2387.1477};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=142;
+			type="SCP_CB_LCZ_Hallway_Corner_2";
+		};
+		class Item51
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2368.1362,10.585612,2390.4651};
+				angles[]={0,3.1415927,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=149;
+			type="SCP_CB_LCZ_Piece_WhiteWall_Doorway";
+		};
+		class Item52
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2368.3364,9.5023432,2412.4448};
+				angles[]={-0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=154;
+			type="SCP_CB_LCZ_Room_DClassCells";
+		};
+		class Item53
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2360.7642,9.1768761,2383.0708};
+				angles[]={0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=155;
+			type="SCP_CB_Things_HeavyDoor_Button";
+		};
+		class Item54
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2368.1482,9.2378969,2390.4753};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=156;
+			type="SCP_CB_Things_Door1_CardReader";
+		};
+		class Item55
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2364.9802,9.2378969,2412.4033};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=157;
+			type="SCP_CB_Things_Door1_Button_Error";
+		};
+		class Item56
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2371.2957,9.2378969,2412.4138};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=158;
+			type="SCP_CB_Things_Door1_Button_Error_Inverted";
+		};
+		class Item57
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2368.1243,10.583126,2441.9583};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=159;
+			type="SCP_CB_LCZ_Room_Endroom";
+		};
+		class Item58
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2368.0701,9.468421,2449.2771};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=160;
+			type="SCP_CB_Things_ContainmentDoor";
+			atlOffset=0.024999619;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item59
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.3799,9.2378969,2432.0803};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=161;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item60
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.3682,9.2378969,2428.3445};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=162;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item61
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.3679,9.2378969,2424.5872};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=163;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item62
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.3716,9.2378969,2420.8462};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=164;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item63
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.3765,9.2378969,2417.0862};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=165;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item64
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.8911,9.2378969,2417.0952};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=166;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item65
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2370.0015,9.2378969,2420.8362};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=167;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item66
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.9255,9.2378969,2424.5845};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=168;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item67
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.9314,9.2378969,2428.3218};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=169;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item68
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.927,9.2378969,2432.0828};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=170;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item69
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.9214,9.2378969,2407.7124};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=171;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item70
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.9258,9.2378969,2403.9653};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=172;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item71
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.9336,9.2378969,2400.2124};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=173;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item72
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.938,9.2378969,2396.4607};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=174;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item73
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.925,9.2378969,2392.7109};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=175;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item74
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.3506,9.2378969,2392.7195};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=176;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item75
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.3479,9.2378969,2396.4673};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=177;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item76
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.3582,9.2378969,2400.2151};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=178;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item77
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.3567,9.2378969,2403.9685};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=179;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item78
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.3523,9.2378969,2407.7234};
+				angles[]={-0,1.5707964,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=180;
+			type="SCP_CB_Things_Door2_Button";
+		};
+		class Item79
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2368.1389,9.2378902,2434.377};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=181;
+			type="SCP_CB_Things_Door1_CardReader";
+			atlOffset=0.044998169;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="RequiredClearanceLevel";
+					expression="_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item80
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.9565,8.7306261,2443.7141};
+				angles[]={-0,3.8928597,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=183;
+			type="SCP_CB_Things_MetalTable_Divider";
+		};
+		class Item81
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2369.1475,9.5701418,2443.7485};
+				angles[]={-0,4.4143276,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=184;
+			type="SCP_CB_Things_Item_Keycard_C3";
+		};
+		class Item82
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2366.7771,8.8746119,2443.0002};
+				angles[]={-0,1.7362607,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=185;
+			type="SCP_CB_Things_AcousticScreen";
+		};
+		class Item83
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2391.3342,9.4159346,2364.4895};
+				angles[]={0,5.0981359,-0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=186;
+			type="SCP_CB_Things_Item_Keycard_C4";
+			atlOffset=0.74969959;
+		};
+		class Item84
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2357.811,8,2392.4839};
+			};
+			id=187;
+			type="crowsEW_editormodules_moduleAddJammer";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crowsEW_editormodules_addjammer_strength";
+					expression="_this setVariable ['FalloffRadius',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=400;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crowsEW_editormodules_addjammer_isActiveAtMissionStart";
+					expression="_this setVariable ['IsActiveAtMissionStart',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="crowsEW_editormodules_addjammer_isVoiceCommsJammer";
+					expression="_this setVariable ['IsVoiceCommsJammer',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crowsEW_editormodules_addjammer_isDroneJammer";
+					expression="_this setVariable ['IsDroneJammer',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crowsEW_editormodules_addjammer_radius";
+					expression="_this setVariable ['EffectiveRadius',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=400;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item85
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2326.175,8.0100002,2366.1831};
+			};
+			name="backrooms_1";
+			id=188;
+			type="diwako_anomalies_main_moduleTeleport";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="diwako_anomalies_main_moduleTeleport_anomalyId";
+					expression="_this setVariable ['anomalyId',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item86
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1024.0864,6.9096589,921.24884};
+				angles[]={6.1835175,0,6.1830225};
+			};
+			name="backrooms_2";
+			id=189;
+			type="diwako_anomalies_main_moduleTeleport";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="diwako_anomalies_main_moduleTeleport_anomalyId";
+					expression="_this setVariable ['anomalyId',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item87
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2337.6499,8.7421579,2350.5029};
+				angles[]={-0,3.1415927,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=192;
+			type="SCP_CB_Things_Keypad_CardReader";
+			atlOffset=0.0050001144;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="PressExpression";
+					expression="_this setVariable ['SCP_CB_Operetable_PressExpression', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[elevator_1, 'Toggle', 0] call SCP_fnc_doorOperate";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="RequiredClearanceLevel";
+					expression="_this setVariable ['SCP_CB_Operetable_Required_ClearanceLevel', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=4;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item88
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2339.6631,8.7371578,2350.0759};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=193;
+			type="SCP_CB_Things_Keypad_Button";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="PressExpression";
+					expression="_this setVariable ['SCP_CB_Operetable_PressExpression', _value, true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[elevator_1, 'Toggle', 0] call SCP_fnc_doorOperate";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item89
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2338.614,9.7578154,2348.249};
+				angles[]={-0,3.1415927,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="elevator_1";
+			};
+			id=131;
+			type="SCP_CB_Things_ElevatorRoom_Door";
+		};
+		class Item90
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2340.3616,8.0064096,2354.3777};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_ArtTShirt_01_v2_F";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="B_CivilianBackpack_01_Everyday_Vrana_F";
+								isBackpack=1;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="SCP_CB_Things_Keycard_C4";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="GXTS_MTF_bala2";
+						};
+					};
+					id=195;
+					type="C_Man_casual_5_v2_F";
+					atlOffset=0.0049705505;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=194;
+			atlOffset=0.0049705505;
+		};
+		class Item91
+		{
+			dataType="Marker";
+			position[]={2449.7671,8,2342.041};
+			name="marker_18";
+			text="Testing Facility";
+			type="mil_flag";
+			colorName="ColorWhite";
+			id=196;
 		};
 	};
 };
