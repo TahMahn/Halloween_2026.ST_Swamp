@@ -1,0 +1,5 @@
+respawnOnStart = -1;
+onLoadName = "MTF Epsilon";
+briefingName = "MTF Epsilon";
+author = "Berntsen";
+disabledAI = 1;
